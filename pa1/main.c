@@ -1,10 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <pthread.h>
+#include <main.h>
+#include <cp.h>
+#include <wr.h>
 
-struct nodes{
+struct stringS{
 	char data;
-	struct nodes* next;
+	struct stringS* next;
 	pthread_mutex_t mutex;
 }
 
