@@ -1,15 +1,18 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <pthread.h>
+
 #include <main.h>
-#include <cp.h>
-#include <wr.h>
+#include <funcOfThread.h>
+
+
 
 struct stringS{
 	char data;
 	struct stringS* next;
 	pthread_mutex_t mutex;
 }
+
 
 int main(int argc, char* argv[]){
 	
