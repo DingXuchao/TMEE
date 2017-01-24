@@ -1,3 +1,0 @@
-checkProperty(int F);
-
-
